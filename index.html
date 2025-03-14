@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La radio que iluminó el pueblo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1 class="title">La radio que iluminó el pueblo</h1>
+        <div class="content-audio">
+            <div class="intro fade-in">
+                <p class="intro__text">Para conocer la historia de Vallequieto da clic en comenzar.</p>
+                <button class="button button--play">
+                    <img class="button__img" src="assets/comenzar.png" alt="">
+                    <span class="button__text">Comenzar</span>
+                </button>
+            </div>
+            <div class="intro-audio fade-in d-none">
+                <img class="intro-audio__img" src="assets/comenzar.png" alt="">
+                <audio class="audio fade-in audio--intro" controls>
+                    <source src="assets/intro.mp3" type="audio/mpeg">
+                    <source src="your-audio-file.ogg" type="audio/ogg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            <div class="decisions fade-in d-none">
+                <div>
+                    <p class="decisions__text">Elige un camino.</p>
+                </div>
+                <div class="decisions-container">
+                    <div class="decisions__option decisions__option--one">
+                        <button class="button button--one">
+                            <img class="button__img" src="assets/radio.png" alt="">
+                            <span class="button__text">La radio</span>
+                        </button>
+                    </div>
+                    <div class="decisions__option decisions__option--two">
+                        <button class="button button--two">
+                            <img class="button__img" src="assets/tradicion.png" alt="">
+                            <span class="button__text">La tradición oral</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="one fade-in d-none">
+                <img class="one__img" src="assets/radio.png" alt="">
+                <h2 class="one__title">La radio</h2>
+                <audio class="audio audio--one" controls>
+                    <source src="assets/intro.mp3" type="audio/mpeg">
+                    <source src="your-audio-file.ogg" type="audio/ogg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            <div class="two fade-in d-none">
+                <img class="two__img" src="assets/tradicion.png" alt="">
+                <h2 class="two__title">La tradició oral</h2>
+                <audio class="audio audio--two" controls>
+                    <source src="assets/intro.mp3" type="audio/mpeg">
+                    <source src="your-audio-file.ogg" type="audio/ogg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            <div class="listen-again fade-in d-none">
+                <p class="listen-again__text">Si quieres escuchar el otro camino, da clic en escuchar de nuevo.</p>
+                <button class="button button--listen-again">
+                    <img class="button__img" src="assets/volver.png" alt="">
+                    <span class="button__text">Escuchar de nuevo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
